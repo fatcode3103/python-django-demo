@@ -5,6 +5,9 @@ class User(models.Model):
     name = models.CharField(max_length=255)
     role_id = models.IntegerField(null=True)
 
+    class Meta:
+        db_table = "User"
+
 
 class Role(models.Model):
     name = models.CharField(max_length=255)
