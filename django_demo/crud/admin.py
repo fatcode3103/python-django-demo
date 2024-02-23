@@ -5,7 +5,7 @@ from .models import User, Role, Permission, GroupPermission
 
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ("name",)
+    list_display = ("name", "role")
 
 
 admin.site.register(User, UserAdmin)
